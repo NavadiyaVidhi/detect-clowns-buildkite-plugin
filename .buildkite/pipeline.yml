@@ -3,6 +3,12 @@ steps:
     plugins:
       - plugin-tester#v1.1.1: ~
 
+  - label: run Detect Clowns
+  plugins:
+      - shellcheck#v1.3.0:
+          files:
+            - hooks/*
+            
   - label: ":sparkles: lint"
     plugins:
       - plugin-linter#v3.3.0:
@@ -13,8 +19,4 @@ steps:
       - shellcheck#v1.3.0:
           files: hooks/*
 
-  -label: run 
-  plugins:
-      - shellcheck#v1.3.0:
-          files:
-            - hooks/*
+  
