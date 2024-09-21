@@ -12,3 +12,9 @@ steps:
     plugins:
       - shellcheck#v1.3.0:
           files: hooks/*
+
+  -label: run 
+  plugins:
+      - shellcheck#v1.3.0:
+          files:
+            - hooks/*
