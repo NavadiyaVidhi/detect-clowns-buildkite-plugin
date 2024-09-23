@@ -1,6 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
+BUILDKITE_BUILD_CHECKOUT_PATH="${BUILDKITE_BUILD_CHECKOUT_PATH:-$(pwd)}"
+
 echo "--- Searching for Clowns 🤡"
 echo "$BUILDKITE_BUILD_CHECKOUT_PATH"
 
