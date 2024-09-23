@@ -1,17 +1,12 @@
 steps:
   - label: "🤡 :hammer:"
-  command: echo "Running plugin tester..."
     plugins:
       - plugin-tester#v1.1.1: ~
     
-
-            
   - label: ":sparkles: lint"
     plugins:
       - plugin-linter#v3.3.0:
           id: detect-clowns
-    
-
 
   - label: ":shell: Shellcheck"
     plugins:
