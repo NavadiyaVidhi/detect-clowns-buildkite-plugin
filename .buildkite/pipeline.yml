@@ -9,6 +9,7 @@ steps:
           id: detect-clowns
 
   - label: ":shell: Shellcheck"
+    command: echo "I'm Shellcheck..."
     plugins:
       - shellcheck#v1.3.0:
           files: hooks/**
